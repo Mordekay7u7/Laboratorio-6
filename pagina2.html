@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad #2 - Las Uvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="tema-uvas">
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio (Coco)</a></li>
+        <li><a href="pagina1.html">Página 1 (Mango)</a></li>
+        <li><a href="pagina2.html" class="active">Página 2 (Uvas)</a></li>
+        <li><a href="pagina3.html">Página 3 (Sandía)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-texto-img">
+      <img src="imagenes/uvas.png" alt="Imagen de Uvas" class="imagen_coco">
+      <h1>Las uvas son pequeñas frutas carnosas que crecen en racimos en la vid (Vitis vinifera), apreciadas desde la antigüedad tanto para consumo fresco como para la elaboración de vino.</h1>
+  </div>
+
+  <main class="seccion-contenido">
+    <p>
+      El cultivo de la uva comenzó hace más de 6,000 años en la región del Mediterráneo y el Oriente Medio. A lo largo de la historia, las civilizaciones griega y romana impulsaron su expansión, convirtiendo a la viticultura en un pilar fundamental de su cultura y economía.
+    </p>
+
+    <p>
+      Son reconocidas por su alto contenido de antioxidantes, especialmente el resveratrol, presente principalmente en la piel de las uvas tintas. Este compuesto ayuda a proteger la salud cardiovascular y combatir el envejecimiento celular de forma natural.
+    </p>
+
+    <p>
+      Además de disfrutarse al natural o en jugos, las uvas pueden deshidratarse para transformarse en pasas. Su jugo fermentado da lugar a una inmensa variedad de vinos que marcan la tradición gastronómica de diversos países alrededor del mundo.
+    </p>
+
+    <div class="my-4 text-center">
+      <button type="button" 
+              class="btn btn-uvas fw-bold" 
+              data-bs-toggle="popover" 
+              data-bs-title="¿Sabías que? 🍇" 
+              data-bs-content="Se necesitan aproximadamente 1.2 a 1.5 kilogramos de uvas frescas para elaborar una sola botella de vino de 750 ml.">
+        ¡Haz clic para ver un dato curioso!
+      </button>
+    </div>
+
+    <h2 class="text-center my-4" style="color: var(--color-principal);">Variedades de Uvas</h2>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes/uva_verde.jpg" class="card-img-top" alt="Uva Verde">
+          <div class="card-body">
+            <h5 class="card-title">Thompson Seedless</h5>
+            <p class="card-text">Uva verde sin semillas, muy crujiente y dulce. Es la variedad más consumida en fresco y la más utilizada para elaborar pasas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes/uva_negra.jpg" class="card-img-top" alt="Uva Negra">
+          <div class="card-body">
+            <h5 class="card-title">Uva Negra Ribier</h5>
+            <p class="card-text">De piel oscura y firme, caracterizada por un sabor intenso, pulpa carnosa y alta concentración de resveratrol.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagenes/uva_roja.jpg" class="card-img-top" alt="Uva Red Globe">
+          <div class="card-body">
+            <h5 class="card-title">Red Globe</h5>
+            <p class="card-text">Variedad de grano grande y color rojo brillante, muy cotizada como uva de mesa por su textura jugosa y gran tamaño.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+
+</body>
+</html>

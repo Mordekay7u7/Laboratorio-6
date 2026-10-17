@@ -53,3 +53,228 @@
       font-size: 1.1rem;
       
     }
+    /* ====== Paleta de colores para la página de Coco (Café, Crema y Blanco) ====== */
+:root {
+  --color-principal: #5c3a21; /* Café oscuro */
+  --color-secundario: #8b5e3c; /* Café medio */
+  --color-fondo: #fbf8f3; /* Blanco crema */
+  --color-tarjeta: #ffffff;
+  --color-texto: #3e2723;
+  --color-activo: #d7ccc8;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado y Navegación */
+header {
+  background-color: var(--color-principal);
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--color-secundario);
+}
+
+/* Marca la página actual */
+nav ul li a.active {
+  background-color: #ffffff;
+  color: var(--color-principal);
+}
+
+/* Hero Container */
+.container-texto-img {
+  max-width: 900px;
+  margin: 40px auto 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.imagen_coco {
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.container-texto-img h1 {
+  font-size: 1.6rem;
+  color: var(--color-principal);
+  line-height: 1.4;
+}
+
+/* Estilos de párrafos y secciones */
+.seccion-contenido {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.seccion-contenido p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Personalización de tarjetas Bootstrap */
+.card {
+  border: 1px solid var(--color-secundario);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  color: var(--color-principal);
+  font-weight: bold;
+}
+
+
+/* ====== Paleta de colores para la página de Mango (Amarillos y Naranjas) ====== */
+body.tema-mango {
+  --color-principal: #e6a100; /* Naranja intenso */
+  --color-secundario: #f5c400; /* Naranja medio */
+  --color-fondo: #fffde7; /* Amarillo crema muy suave */
+  --color-tarjeta: #ffffff;
+  --color-texto: #4e342e;
+}
+
+body.tema-mango header {
+  background-color: var(--color-principal);
+}
+
+body.tema-mango nav ul li a:hover {
+  background-color: var(--color-secundario);
+}
+
+body.tema-mango nav ul li a.active {
+  background-color: #ffffff;
+  color: var(--color-principal);
+}
+
+body.tema-mango .container-texto-img h1 {
+  color: var(--color-principal);
+}
+
+body.tema-mango .card {
+  border: 1px solid var(--color-secundario);
+}
+
+body.tema-mango .card-title {
+  color: var(--color-principal);
+}
+
+/* ====== Paleta de colores para la página de Uvas (Morados y Violetas) ====== */
+body.tema-uvas {
+  --color-principal: #4a148c; /* Morado oscuro */
+  --color-secundario: #7b1fa2; /* Morado medio */
+  --color-fondo: #f3e5f5; /* Violeta muy suave */
+  --color-tarjeta: #ffffff;
+  --color-texto: #260e35;
+}
+
+body.tema-uvas header {
+  background-color: var(--color-principal);
+}
+
+body.tema-uvas nav ul li a:hover {
+  background-color: var(--color-secundario);
+}
+
+body.tema-uvas nav ul li a.active {
+  background-color: #ffffff;
+  color: var(--color-principal);
+}
+
+body.tema-uvas .container-texto-img h1 {
+  color: var(--color-principal);
+}
+
+body.tema-uvas .card {
+  border: 1px solid var(--color-secundario);
+}
+
+body.tema-uvas .card-title {
+  color: var(--color-principal);
+}
+
+body.tema-uvas .btn-uvas {
+  background-color: var(--color-principal);
+  color: #ffffff;
+}
+
+body.tema-uvas .btn-uvas:hover {
+  background-color: var(--color-secundario);
+  color: #ffffff;
+}
+
+/* ====== Paleta de colores para la página de Sandía (Rojo y Verde) ====== */
+body.tema-sandia {
+  --color-principal: #d32f2f; /* Rojo sandía */
+  --color-secundario: #2e7d32; /* Verde cáscara */
+  --color-fondo: #ffebee; /* Rojo rosado muy claro */
+  --color-tarjeta: #ffffff;
+  --color-texto: #1b5e20;
+}
+
+body.tema-sandia header {
+  background-color: var(--color-secundario);
+}
+
+body.tema-sandia nav ul li a:hover {
+  background-color: var(--color-principal);
+}
+
+body.tema-sandia nav ul li a.active {
+  background-color: #ffffff;
+  color: var(--color-secundario);
+}
+
+body.tema-sandia .container-texto-img h1 {
+  color: var(--color-principal);
+}
+
+body.tema-sandia .card {
+  border: 1px solid var(--color-principal);
+}
+
+body.tema-sandia .card-title {
+  color: var(--color-principal);
+}
+
+body.tema-sandia .btn-sandia {
+  background-color: var(--color-principal);
+  color: #ffffff;
+  border: none;
+}
+
+body.tema-sandia .btn-sandia:hover {
+  background-color: var(--color-secundario);
+  color: #ffffff;
+}
