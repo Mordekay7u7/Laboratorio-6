@@ -1,0 +1,55 @@
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: #d8d5d5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .container-texto-img {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    /* Ajuste para el espacio de tu imagen */
+    .container-texto-img img {
+      max-height: 50px;
+      width: auto;
+      object-fit: contain;
+      
+    }
+
+    .container-texto-img h1 {
+      margin: 0;
+      font-size: 4rem;
+      color: #333;
+    }
+
+    nav {
+        height: 3rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 1s;
+    }
+
+    nav a:hover {
+      color: #012952;
+      font-size: 1.1rem;
+      
+    }
