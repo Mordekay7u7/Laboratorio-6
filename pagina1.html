@@ -38,6 +38,65 @@
       En la gastronomía, el mango es sumamente versátil: se disfruta fresco, en batidos, postres, ensaladas y salsas agridulces. En países como México, es muy común consumirlo preparado con chile en polvo, chamoy y limón.
     </p>
 
+    <!--Ciclo de vida del mango hecho por ruben-->
+    <h2 class="text-center my-4" style="color: var(--color-principal);">Ciclo de vida del mango</h2>
+    <div id="carruselCicloMango" class="carousel slide mx-auto shadow rounded" data-bs-ride="carousel" style="max-width: 650px;">
+
+      <!--Indicadores de diapositivas-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselCicloMango" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Etapa 1"></button>
+        <button type="button" data-bs-target="#carruselCicloMango" data-bs-slide-to="1" aria-label="Etapa 2"></button>
+        <button type="button" data-bs-target="#carruselCicloMango" data-bs-slide-to="2" aria-label="Etapa 3"></button>
+        <button type="button" data-bs-target="#carruselCicloMango" data-bs-slide-to="3" aria-label="Etapa 4"></button>
+      </div>
+      
+      <!--Imagenes y descripciones-->
+      <div class="carousel-inner rounded">
+        <!--Etapa 1-->
+        <div class="carousel-item active">
+          <img src="imagenes/Floracionmango.jpg" class="d-block w-100" alt="Floracion del mango" style="height: 380px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>1. Floracion</h5>
+            <p>El árbol produce diminutas flores amarillas y rosadas agrupadas en panículas durante la primavera.</p>
+          </div>
+        </div>
+        <!--Etapa 2-->
+        <div class="carousel-item">
+          <img src="imagenes/Mangoverde.jpg" class="d-block w-100" alt="Desarrollo del fruto" style="height: 380px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>2. Desarrollo del fruto(Mango verde)</h5>
+            <p>Tras la polinización, el fruto comienza a crecer en tono verde, ácido y de textura firme.</p>
+          </div>
+        </div>
+        <!--Etapa 3-->
+        <div class="carousel-item">
+          <img src="imagenes/Mangomaduro.jpg" class="d-block w-100" alt="Maduración del mango" style="height: 380px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>3. Maduración</h5>
+            <p>El mango cambia a tonos amarillos, rojizos u anaranjados, desarrollando su dulzura y aroma característico.</p>
+          </div>
+        </div>
+        <!--Etapa 4-->
+        <div class="carousel-item">
+          <img src="imagenes/Semillamango.jpg" class="d-block w-100" alt="Semilla y germinación" style="height: 380px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <h5>4. Semilla y germinación</h5>
+            <p>El hueso o hueso interno libera el brote que dará vida a un nuevo árbol de mango.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Controles para avanzar o retroceder-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselCicloMango" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-scale="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselCicloMango" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-scale="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>      
+    </div>
+
     <div class="my-4 text-center">
       <button type="button" 
               class="btn btn-warning text-white fw-bold" 
